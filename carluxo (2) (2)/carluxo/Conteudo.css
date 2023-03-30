@@ -1,0 +1,314 @@
+section img {
+    /* Fotos dos Artistas */
+
+    
+    margin: 2% 1% 2% 1%;    
+    width: 29%;
+    height: 3%;
+    box-shadow: 5px 3px 12px 0 black;
+    float: left;
+    border-radius: 5%;
+}
+
+
+
+video {
+    
+    display: block;
+    margin: auto;
+    margin-top: 1% 0 3% 0;
+    border-radius: 2%;
+    width: 38%;
+}
+
+p {
+    /* PARAGRAFOS */
+
+    display: block;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15pt;
+    margin-left: 15%;
+    margin-bottom: 2%;
+    margin-right: 15%;
+    text-align: justify;
+    line-height: 4vh;
+    font-weight: 300;
+}
+
+
+.tit {
+    /* TITULOS */
+
+    margin: 10% 0% 3% 22%;
+    
+    border-left: #000000 5px solid;
+    font-family: 'Roboto', sans-serif;
+    /* font-size: 30px; */
+    font-weight: 300;
+}
+.tit1 {
+    /* SUB TITULO */
+
+    margin: 7% 0% 3% 22%;
+    border-left: #00c1df 5px solid;
+    font-family: 'Roboto', sans-serif;
+}
+
+p img{
+    /* IMAGENS DOS ARTISTAS */
+
+    width: 45%;
+    float: left;
+    margin: 0 2% 2% 0;
+    border-radius: 2%;
+    box-shadow: -3px 3px 12px 0 black;
+}
+p img:hover{
+    width: 48%;
+}
+.div{
+    margin: 15% 0% 5% 5%;
+    border: black 2px solid ;
+ 
+}
+
+.div h3{
+    /* h3 DAS PLAYLIST */
+
+    margin: 4% 0% 1% 3%;
+    border-left: #00c1df 5px solid;
+    font-family: 'Roboto', sans-serif;
+    display: inline;
+    background-color: brown;
+    
+}
+
+.div img{
+    width: 25%;
+    border-radius: 2%;
+    margin: 1% 0% 1% 3%;
+   
+    
+}
+.mus audio{
+    margin: 1% 1% 1% 3%;
+    
+}
+.trec{
+    /* TRECHO DA MUSICA */
+    margin-top: 4%;
+    font-size: 3vh;
+    font-family: cursive;
+    text-align: center;
+}
+footer {
+    /* PARTE DE BAIXO */
+
+    font-family: 'Roboto', sans-serif;
+    font-size: 90%;
+    text-align: center;
+    background-color: #00c1df;
+    margin-bottom: 0.5%;
+    margin-top: 20%;
+    padding: 0.5%;
+}
+
+@media all and (max-width: 900px){
+
+    
+    nav {
+        /* MENU */
+        top: 0;
+        background-color: #00cbef;
+        width: 100%;
+        position: fixed;
+        border-bottom: 2px solid black;
+        z-index: 10;
+        opacity: 0.9;
+        text-align: center; 
+    }
+    header nav a{
+        /* TEXTO MENU */
+        text-decoration: none;  
+        font-family: 'Roboto', sans-serif; 
+        font-size: 15px;
+        color: rgb(0, 0, 0);
+        padding: 0,3%; 
+            
+    }
+    #logo{
+        display: none;
+    }
+}
+@media all and (max-width: 430px){
+    nav {
+        /* MENU */
+        top: 0;
+        background-color: #00cbef;
+        border-bottom: 2px solid black;
+        z-index: 10;
+        opacity: 0.9;
+        text-align: center; 
+    }
+    header nav .menu{
+        /* TEXTO MENU */
+        text-decoration: none;  
+        font-family: 'Roboto', sans-serif; 
+        font-size: 15px;
+        color: rgb(0, 0, 0);
+        padding: 0,3%; 
+        display: block;
+    }
+    #logo{
+        display: none;
+    }
+    .tit {
+        /* TITULOS */
+    
+        margin: 10% 0% 3% 10%;
+        border-left: #00cbef 5px solid ;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 200;
+    }
+
+}
+
+
+body {
+
+    padding: 0;
+
+    margin: 0;
+
+   
+}
+
+#login {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    height: 100vh;
+
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+
+.card {
+
+    background-color: rgba(19, 19, 19, 0.3);
+
+    padding: 40px;
+
+    border-radius: 2px;
+
+    width:280px;
+
+}
+
+.card-header {
+
+    padding-bottom: 50px;
+
+    opacity: 0.8;
+
+    color: #fff;
+
+}
+
+.card-header::after {
+
+    content: "";
+
+    width: 70px;
+
+    height: 1px;
+
+    background-color: #fff;
+
+    display: block;
+
+    margin-top: -17px;
+
+    margin-left: -5px;
+
+}
+
+.card-content label {
+
+    color: #fff;
+
+    font-size: 12px;
+
+    opacity: 0.8;
+
+}
+
+.card-content-area {
+
+    display: flex;
+
+    flex-direction: column;
+
+    padding:10px 0;
+
+}
+
+.card-content-area input {
+
+    margin-top: 10px;
+
+    padding:0 5px;
+
+    background-color: transparent;
+
+    border:none;
+
+    border-bottom: 1px solid #e1e1e1;
+
+    outline: none;
+
+    color: #fff;
+
+}
+
+.card-footer {
+
+    display: flex;
+
+    flex-direction: column;
+
+}
+
+.card-footer .submit{
+
+    width: 100%;
+
+    height: 40px;
+
+    background-color: #a13854;
+
+    border:none;
+
+    color:#e1e1e1;
+
+    margin: 10px 0;
+
+}
+
+.card-footer a {
+
+    text-align: center;
+
+    font-size: 12px;
+
+    opacity: 0.8;
+
+    color: #fff;
+
+    text-decoration: none;
+
+}
